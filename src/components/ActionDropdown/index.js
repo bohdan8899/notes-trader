@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
@@ -28,7 +29,7 @@ const dropdownStyles = makeStyles(() => ({
   }
 }));
 
-export default function ActionDropdown() {
+function ActionDropdown({items, onSelect}) {
   const dropdownClasses = dropdownStyles();
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
@@ -77,10 +78,7 @@ export default function ActionDropdown() {
             <div className={css.menuContainer}>
               <ClickAwayListener onClickAway={handleClose}>
                 <MenuList autoFocusItem={open} id="menu-list-grow">
-                  <MenuItem onClick={handleClose}><div>Delete</div></MenuItem>
-                  <MenuItem onClick={handleClose}><div>Archive</div></MenuItem>
-                  <MenuItem onClick={handleClose}><div>Duplicate</div></MenuItem>
-                  <MenuItem onClick={handleClose}><div>Cancel</div></MenuItem>
+                  {items.map(item => <MenuItem key={item.id} onClick={(e) => {onSelect && onSelect(item); handleClose(e);}}><div>{item.text}</div></MenuItem>)}
                 </MenuList>
               </ClickAwayListener>
             </div>
@@ -90,3 +88,10 @@ export default function ActionDropdown() {
     </div>
   );
 }
+
+ActionDropdown.propTypes = {
+  items: PropTypes.array.isRequired,
+  onSelect: PropTypes.func,
+};
+
+export default ActionDropdown;

@@ -20,6 +20,13 @@ const iconButtonStyles = makeStyles(() => ({
   },
 }));
 
+const ACTION_ITEMS = [
+  {id: 1, text: 'Delete'},
+  {id: 2, text: 'Archive'},
+  {id: 3, text: 'Duplicate'},
+  {id: 4, text: 'Cancel'}
+];
+
 const COLORS = ['#6d4dd1', '#aed2ff', '#74dabd', '#c9bafa', '#2075bc', '#75cbac'];
 const RADIAN = Math.PI / 180;
 
@@ -61,7 +68,7 @@ function TapeCard({className, tape}) {
           <IconButton aria-label="attach-file" size="small" classes={iconButtonClasses}>
             <AttachFileOutlinedIcon/>
           </IconButton>
-          <ActionDropdown />
+          <ActionDropdown items={ACTION_ITEMS} onSelect={(item) => console.log(item)}/>
         </div>
       </div>
       <div className={css.chartSummary}>
@@ -135,12 +142,11 @@ function TapeCard({className, tape}) {
       </div>
       <div className={css.bottomRow}>
         <div className={css.offerItems}>
-          <OfferItem/>
-          <OfferItem/>
-          <OfferItem/>
-          <a href="/">More &gt;</a>
+          {tape.offers.map((offer, index) => <OfferItem key={offer.id} offer={offer} barColor={COLORS[index]}/>)}
+          {tape.offers_count > tape.offers.length && <a href="/">More &gt;</a>}
+          {tape.offers_count === 0 && <div>None of Offers</div>}
         </div>
-        <a href="/">View Accepted Offer &gt;</a>
+        {tape.offers_count > 0 && <a href="/">View Buyer's Offer &gt;</a>}
       </div>
     </div>
   );

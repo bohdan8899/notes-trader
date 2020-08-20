@@ -65,6 +65,7 @@
 
 .chartSummary > .summary > .row > .summaryItem > .value {
   font-weight: normal;
+  text-transform: capitalize;
 }
 
 .chartSummary > .summary > .row > .summaryItem > .blueValue {
