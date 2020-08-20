@@ -1,0 +1,142 @@
+.root {
+  border-radius: 13.2px;
+  box-shadow: 0 0 27px 5px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  padding: 25px 25px 20px 36px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head > h1 {
+  margin: 0;
+  margin-top: 9px;
+  font-size: 20px;
+  line-height: 1.26;
+  letter-spacing: 0.14px;
+  color: #000;
+}
+
+.head > h1 > .idText {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.head > .actions {
+  display: flex;
+  align-items: center;
+}
+
+.chartSummary {
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  margin-bottom: 12px;
+}
+
+.chartSummary > .summary {
+  border-radius: 9px;
+  background-color: #f9fafd;
+  width: 100%;
+  padding: 9px 17px;
+  margin-left: 31px;
+}
+
+.chartSummary > .summary > .row:first-child {
+  margin-bottom: 30px;
+}
+
+.chartSummary > .summary > .row > .summaryItem {
+  width: 20%;
+  display: inline-block;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.chartSummary > .summary > .row > .summaryItem > label {
+  display: block;
+}
+
+.chartSummary > .summary > .row > .summaryItem > .value {
+  font-weight: normal;
+}
+
+.chartSummary > .summary > .row > .summaryItem > .blueValue {
+  color: #3f37d7;
+}
+
+.divider {
+  border-color: #cfcfdc;
+}
+
+.offersHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offersHead > h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  color: #000000;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.offersHead > a {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.05;
+  text-align: center;
+  color: #3f37d7;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bottomRow > a {
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.05;
+  text-align: center;
+  color: #3f37d7;
+  padding: 12px 25px;
+  border-radius: 20.5px;
+  border: solid 2px #201bb2;
+  background-color: #f3f6fc;
+}
+
+.bottomRow .offerItems {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bottomRow .offerItems > a {
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  color: #3f37d7;
+}

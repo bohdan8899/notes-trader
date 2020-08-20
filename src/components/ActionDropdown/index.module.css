@@ -1,0 +1,21 @@
+.menuContainer > ul {
+  padding: 0;
+}
+
+.menuContainer > ul > li {
+  padding: 0 24px 0 13px;
+}
+
+.menuContainer > ul > li > div {
+  border-bottom: solid 1px #f3f3f7;
+  width: 100%;
+  padding: 13px 0;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  color: #000000;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
