@@ -1,0 +1,133 @@
+{
+  "code": 200,
+  "message": "ok",
+  "data": [
+    {
+      "id": 6,
+      "tape_id": "AZ-891",
+      "name": "40k-50k 2nd Pos Loans",
+      "status": "active",
+      "type": "NPl/PL",
+      "position": "2",
+      "created_at": "2020-08-11T18:24:13.415+03:00",
+      "expires_at": "2020-08-21T18:24:13.415+03:00",
+      "total_upb": {
+        "formatted": "$4,000,584",
+        "cents": 400058400,
+        "value": 4000584.0
+      },
+      "asking_price": {
+        "formatted": "$2,000,584",
+        "cents": 200058400,
+        "value": 2000584.0
+      },
+      "note_count": 80,
+      "notes_breakdown": {
+        "TX": 20,
+        "AR": 40,
+        "FL": 15,
+        "NJ": 5
+      },
+      "invitee_count": 10,
+      "notes": [
+        {
+          "id": 83,
+          "note_id": "ZM-12507",
+          "type": "NPL",
+          "status": "active",
+          "position": "1",
+          "borrower": "Joana Quigley",
+          "city": "Mainburg",
+          "state": "ME",
+          "total_upb": {
+            "formatted": "$82,939",
+            "cents": 8293900,
+            "value": 82939.0
+          }
+        }
+      ],
+      "offers_count": 0,
+      "offers": [],
+      "notifications": {
+        "messages": 0,
+        "offers": 0,
+        "attachments": 0
+      }
+    },
+    {
+      "id": 7,
+      "tape_id": "AZ-890",
+      "name": "Midwest Homes",
+      "status": "active",
+      "type": "NPl/PL",
+      "position": "2",
+      "created_at": "2020-08-11T18:24:13.415+03:00",
+      "expires_at": "2020-08-21T18:24:13.415+03:00",
+      "total_upb": {
+        "formatted": "$4,000,584",
+        "cents": 400058400,
+        "value": 4000584.0
+      },
+      "asking_price": {
+        "formatted": "$2,000,584",
+        "cents": 200058400,
+        "value": 2000584.0
+      },
+      "note_count": 80,
+      "notes_breakdown": {
+        "TX": 20,
+        "AR": 40,
+        "FL": 15,
+        "NJ": 5
+      },
+      "invitee_count": 10,
+      "notes": [
+        {
+          "id": 83,
+          "note_id": "ZM-12507",
+          "type": "NPL",
+          "status": "active",
+          "position": "1",
+          "borrower": "Joana Quigley",
+          "city": "Mainburg",
+          "state": "ME",
+          "total_upb": {
+            "formatted": "$82,939",
+            "cents": 8293900,
+            "value": 82939.0
+          }
+        }
+      ],
+      "offers_count": 3,
+      "offers": [
+        {
+          "id": 1,
+          "offeror": "John Paul",
+          "status": "active",
+          "total_upb": {
+            "formatted": "$3,000,584",
+            "cents": 300058400,
+            "value": 3000584.0
+          },
+          "note_count": 35
+        },
+        {
+          "id": 2,
+          "offeror": "Jack Johns",
+          "status": "active",
+          "total_upb": {
+            "formatted": "$3,500,584",
+            "cents": 350058400,
+            "value": 3500584.0
+          },
+          "note_count": 68
+        }
+      ],
+      "notifications": {
+        "messages": 0,
+        "offers": 0,
+        "attachments": 0
+      }
+    }
+  ]
+}
